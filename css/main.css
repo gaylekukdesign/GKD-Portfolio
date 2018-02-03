@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,500i,700,700i');
+
+/* ==========================================================================
+   Base styles:
+   ========================================================================== */
+/* Fix to include padding and border in the total width for each element */
+* {
+  box-sizing: border-box;
+}
+
+/* Fix for responsive images */
+img {
+  max-width: 100%;
+}
+
+body{
+  font-family: 'Rubik', sans-serif;
+}
+
+section{
+  display: block;
+  margin: 0 auto;
+}
+
+p{
+  color: #fff;
+  font-weight: 300;
+  line-height: 23px;
+}
+
+h1, h2{
+  font-weight: 500;
+  line-height: 36px;
+}
+/* ==========================================================================
+   Main Colors:
+
+blue: #192CD8;
+pink: #FFB3B3:
+Text Gray:
+
+   ========================================================================== */
+
+
+/* ==========================================================================
+   nav + header
+   ========================================================================== */
+  #mainNav{
+    display: block;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: #192CD8;
+    z-index: 1000;
+  }
+
+#nav-align{
+  display:block;
+  width: 960px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+  #logo{
+    height: 30px;
+  }
+
+  ul{
+    display: inline-block;
+    color: #fff;
+    padding: 10px 0;
+    width: 80%;
+    margin: 0 auto;
+    text-align: right;
+  }
+
+  li{
+    display: inline-block;
+    padding-left: 40px;
+    text-decoration: none;
+  }
+
+  header{
+    max-width:960px;
+    display: block;
+    margin: 0 auto;
+    padding: 125px 0 50px 0;
+    z-index: -1000;
+    text-align: center;
+    color:#FFB3B3;
+    font-weight: 400;
+    letter-spacing: .5px;
+  }
+
+  /*
+=================
+Section: projects
+=================*/
+#projects{
+  width: 960px;
+}
+.grid-containter{
+  display: grid;
+  justify-items: start;
+  grid-template-columns: 32% 32% 32%;
+  grid-template-rows: 250px 250px 250px 250px;
+  grid-column-gap: 2%;
+  grid-row-gap: 20px;
+}
+
+.grid-item {
+  width: 100%
+}
+.grid-item:hover{
+  opacity: .5;
+}
+.project-title{
+  opacity: 1 !important;
+}
+.project-1{
+  background-image: url("../img/project_1.jpg");
+  background-size: cover;
+}
+.project-2{
+  background-image: url("../img/project_2.jpg");
+  background-size: cover;
+}
+.project-3{
+  background-image: url("../img/project_3.jpg");
+  background-size: cover;
+}
+.project-4{
+  background-image: url("../img/project_4.jpg");
+  background-size: cover;
+}
+.project-5{
+  background-image: url("../img/project_5.jpg");
+  background-size: cover;
+}
+.project-6{
+  background-image: url("../img/project_6.jpg");
+  background-size: cover;
+}
+.project-7{
+  background-image: url("../img/project_7.jpg");
+  background-size: cover;
+}
+.project-8{
+  background-image: url("../img/project_8.jpg");
+  background-size: cover;
+}
+.project-9{
+  background-image: url("../img/project_9.jpg");
+  background-size: cover;
+}
+.project-10{
+  background-image: url("../img/project_10.jpg");
+  background-size: cover;
+}
+
+/*
+=================
+Section: projects
+=================*/
+#about{
+width: 100% !important;
+ display: block;
+  margin: 0 auto;
+  padding: 75px 0 50px 0;
+  z-index: -1000;
+  background-color: #FFB3B3;
+  margin-top: 100px;
+}
+
+.text-box-wrapper{
+  width: 960px;
+  display: block;
+  margin: 0 auto;
+  max-height: 50vh;
+}
+.text-box, .gayle-photo{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.gayle-photo{
+  z-index: 999;
+}
+
+.gayle-photo{
+  width: 80%;
+  height: 50vh;
+  background-image: url("../img/gayle.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 100px;
+  margin-top: 72px;
+}
+
+/*
+=================
+Footer
+=================*/
+.footer{
+  background-color: #192CD8;
+  padding: 75px 0;
+  margin-top: 250px;
+}
+
+.footer-text-box{
+  margin: 0 auto;
+  width: 70%;
+  display: block;
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+.col-1-2{
+  flex-basis: 49%;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: .3px;
+
+}
