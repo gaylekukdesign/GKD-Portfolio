@@ -37,7 +37,8 @@ h1, h2{
 
 blue: #192CD8;
 pink: #FFB3B3:
-Text Gray:
+text pink: #F39090;
+Text Gray: #4a4a4a;
 
    ========================================================================== */
 
@@ -56,7 +57,7 @@ Text Gray:
 
 #nav-align{
   display:block;
-  width: 960px;
+  width: 80%;
   margin: 0 auto;
   padding: 15px 0;
   position: relative;
@@ -94,6 +95,7 @@ Text Gray:
 
 
   header{
+    position: relative;
     max-width:960px;
     display: block;
     margin: 0 auto;
@@ -103,6 +105,13 @@ Text Gray:
     color:#FFB3B3;
     font-weight: 400;
     letter-spacing: .5px;
+  }
+  #projects-anchor{
+    position:absolute;
+    z-index: 10;
+    top:30%;
+    height: 10px;
+    width: 10px;
   }
 
   /*
