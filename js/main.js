@@ -1,5 +1,26 @@
 
+function sectionHover(id){
+    var projectId = ".project-"+id;
+    var projectTitleId = ".project-title-"+id;
 
+    $(projectId).hover(function(){
+        $(projectTitleId).toggleClass("show");
+    });
+
+    $(projectTitleId).hover(function(){
+        $(projectId).toggleClass("low-opacity");
+    });
+
+    $(projectTitleId).hover(function(){
+        $(projectTitleId).toggleClass("show");
+    });
+}
+
+for (var i = 1; i<=10; i++){
+    sectionHover(i);
+}
+
+/*
 // project hover
 $(".project-1").hover(function(){
   $(".project-title-1").toggleClass("show");
@@ -120,6 +141,8 @@ $(".project-title-10").hover(function(){
 $(".project-title-10").hover(function(){
   $(".project-title-10").toggleClass("show");
 });
+*/
+
 
 //Smooth Scroll
 $(document).ready(function(){
