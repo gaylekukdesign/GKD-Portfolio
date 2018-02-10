@@ -1,3 +1,5 @@
+
+
 // project hover
 $(".project-1").hover(function(){
   $(".project-title-1").toggleClass("show");
@@ -148,4 +150,18 @@ $(document).ready(function(){
       });
     } // End if
   });
+});
+
+
+
+$(document).ready(function(){
+     $('body,html').animate({
+         scrollTop: 0
+     }, 800);
+ $('#go-top').click(function () {
+     $('body,html').animate({
+         scrollTop: 0
+     }, 800);
+     return false;
+ });
 });
