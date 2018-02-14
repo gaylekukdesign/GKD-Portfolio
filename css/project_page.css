@@ -97,6 +97,10 @@ project page
   padding-bottom: 50px;
   display: block;
 }
+.padding-30{
+  padding-bottom: 30px;
+  display: block;
+}
 iframe{
 width: 100%;
 margin-top: 105px;
@@ -131,9 +135,18 @@ display: inline-block;
 .project-opening p{
   color: #4a4a4a;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 29px;
+  margin: 0;
+  padding: 10px 0;
 }
 
+.no-padding-top{
+padding-top: 0 !important;
+}
+.role-wrapper{
+  display: block;
+  padding-top: 1.5rem;
+}
 .project-opening h6.role{
   font-size: .975rem;
   color: #F39090;
@@ -173,6 +186,7 @@ line-height: 24px;
 .project-section .live-web{
   font-size: 1rem;
   padding: 0;
+  text-decoration: none;
 }
 .project-section .flex-container{
 }
