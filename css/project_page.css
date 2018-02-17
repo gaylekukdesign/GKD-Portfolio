@@ -101,9 +101,16 @@ project page
   padding-bottom: 30px;
   display: block;
 }
+.project-opening .yammer{
+  font-size: 1rem;
+  color:#9B9B9B;
+  font-style: italic;
+  line-height: 1.25rem;
+
+}
 iframe{
-width: 100%;
-margin-top: 105px;
+  width: 100%;
+  margin-top: 105px;
 }
 .reduced{
   max-width: 250px;
@@ -125,7 +132,7 @@ margin-top: 105px;
 }
 
 .project-title{
-display: inline-block;
+  display: inline-block;
 }
 
 .font-weight-light{
@@ -141,7 +148,7 @@ display: inline-block;
 }
 
 .no-padding-top{
-padding-top: 0 !important;
+  padding-top: 0 !important;
 }
 .role-wrapper{
   display: block;
@@ -154,14 +161,14 @@ padding-top: 0 !important;
 }
 
 .project-opening h6.role-title{
-color: #F39090;
+  color: #F39090;
 }
 .project-section p{
   color: #4a4a4a;
-display: block;
-margin-top: 10px;
-margin-bottom: 5px;
-line-height: 24px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  line-height: 24px;
 }
 
 .project-section a{
@@ -232,4 +239,34 @@ line-height: 24px;
 .up-arrow:hover, .go-to-top:hover{
   text-decoration: none;
   color: #F39090;
+}
+
+/* ---------------------
+responsive
+--------------------- */
+
+
+@media screen and (min-width: 768px){
+
+  li a{
+    display: block;
+  }
+  .hamburger{
+    display: none;
+    padding: 100px;
+  }
+  .project-section .col-1-2{
+    flex-basis: 48%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .project-contetns{
+    width: 80%;
+  }
+  .row .col-1-2{
+    flex-basis: 100%;
+  }
+
+
 }

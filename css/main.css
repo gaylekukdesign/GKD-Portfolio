@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:200,300,400,400i,500,500i,700,700i');
 
 /* ==========================================================================
-   Base styles:
-   ========================================================================== */
+Base styles:
+========================================================================== */
 /* Fix to include padding and border in the total width for each element */
 * {
   box-sizing: border-box;
@@ -33,27 +33,27 @@ h1, h2{
   line-height: 36px;
 }
 /* ==========================================================================
-   Main Colors:
+Main Colors:
 
 blue: #192CD8;
 pink: #FFB3B3:
 text pink: #F39090;
 Text Gray: #4a4a4a;
 
-   ========================================================================== */
+========================================================================== */
 
 
 /* ==========================================================================
-   nav + header
-   ========================================================================== */
-  #mainNav{
-    display: block;
-    width: 100%;
-    height: 60px;
-    position: fixed;
-    background-color: #192CD8;
-    z-index: 1000;
-  }
+nav + header
+========================================================================== */
+#mainNav{
+  display: block;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  background-color: #192CD8;
+  z-index: 1000;
+}
 
 #nav-align{
   display:block;
@@ -62,59 +62,59 @@ Text Gray: #4a4a4a;
   padding: 15px 0;
   position: relative;
 }
-  #logo{
-    height: 30px;
-    position: absolute;
-    top: 15px;
-  }
+#logo{
+  height: 30px;
+  position: absolute;
+  top: 15px;
+}
 
-  ul{
-    display: inline-block;
-    color: #fff;
-    padding: 10px 0;
-    width: 80%;
-    margin: 0 auto;
-    text-align: right;
-    position: absolute;
-    top:10px;
-    left:20%;
-  }
+ul{
+  display: inline-block;
+  color: #fff;
+  padding: 10px 0;
+  width: 80%;
+  margin: 0 auto;
+  text-align: right;
+  position: absolute;
+  top:10px;
+  left:20%;
+}
 
-  li{
-    display: inline-block;
-    padding-left: 40px;
-  }
-  li a{
+li{
+  display: inline-block;
+  padding-left: 40px;
+}
+li a{
   text-decoration: none;
   color: #fff;
 
-  }
-  .active, li a:hover{
-    color: #ffb3b3;
-  }
+}
+.active, li a:hover{
+  color: #ffb3b3;
+}
 
 
-  #home{
-    position: relative;
-    max-width:960px;
-    display: block;
-    margin: 0 auto;
-    padding: 125px 0 50px 0;
-    z-index: -1000;
-    text-align: center;
-    color:#FFB3B3;
-    font-weight: 400;
-    letter-spacing: .5px;
-  }
-  #projects-anchor{
-    position:absolute;
-    z-index: 10;
-    top:30%;
-    height: 10px;
-    width: 10px;
-  }
+#home{
+  position: relative;
+  max-width:960px;
+  display: block;
+  margin: 0 auto;
+  padding: 125px 0 50px 0;
+  z-index: -1000;
+  text-align: center;
+  color:#FFB3B3;
+  font-weight: 400;
+  letter-spacing: .5px;
+}
+#projects-anchor{
+  position:absolute;
+  z-index: 10;
+  top:30%;
+  height: 10px;
+  width: 10px;
+}
 
-  /*
+/*
 =================
 Section: projects
 =================*/
@@ -134,7 +134,7 @@ h6{
 }
 
 #projects{
-  width: 960px;
+  width: 80%;
 }
 .grid-containter{
   display: grid;
@@ -153,7 +153,7 @@ h6{
   opacity: .5;
 }
 .project-title-1, .project-title-2, .project-title-3, .project-title-4, .project-title-5,
- .project-title-6, .project-title-7, .project-title-8, .project-title-9, .project-title-10{
+.project-title-6, .project-title-7, .project-title-8, .project-title-9, .project-title-10{
   margin: 0 auto;
   opacity: 0;
   position: absolute;
@@ -189,7 +189,7 @@ h6{
   left: 112px;
 }
 .show{
- opacity: 1 !important;
+  opacity: 1 !important;
 }
 .low-opacity{
   opacity: .5;
@@ -247,8 +247,8 @@ h6{
 Section: about
 =================*/
 #about{
-width: 100% !important;
- display: block;
+  width: 100% !important;
+  display: block;
   margin: 0 auto;
   padding: 75px 0 50px 0;
   z-index: -1000;
@@ -298,9 +298,9 @@ Footer
   display: block;
 }
 .row{
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 .col-1-2{
   flex-basis: 49%;
@@ -332,4 +332,66 @@ Footer
   padding-left: 15px;
   position: absolute;
   left: 10%;
+}
+
+/*
+-------------------------------------
+responsiveness
+-------------------------------------- */
+@media screen and (min-width: 768px){
+
+  li a{
+    display: block;
+  }
+  .hamburger{
+    display: none;
+    padding: 100px;
+  }
+
+}
+@media screen and (max-width: 768px){
+
+  li a{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+    float: right;
+  }
+  .hamburger-line{
+    display: block;
+    border: solid 1.5px #ffffff;
+    width: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  #nav-align{
+    width: 90%;
+  }
+  #projects{
+    width: 90%;
+  }
+  .grid-containter{
+    display: grid;
+    justify-items: start;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 250px 250px 250px 250px 250px;
+    grid-column-gap: 2%;
+    grid-row-gap: 20px;
+  }
+
+}
+
+@media screen and (max-width: 480px){
+
+
+  .grid-containter{
+    display: grid;
+    justify-items: start;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px;
+    grid-column-gap: 2%;
+    grid-row-gap: 20px;
+  }
+
 }
