@@ -89,8 +89,3 @@ $( ".hamburger-icon" ).show();
 // });
 
 });
-</script>
-<script>
-  $(function(){
-$("#nav-placeholder").load("nav.html");
-});
