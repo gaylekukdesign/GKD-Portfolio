@@ -7,14 +7,13 @@ project page
   display: block;
   width: 100%;
   height: 50%;
-  background-color: pink;
 }
 
 
 .hero-1{
   background-image: url("../img/foliolink/hero-1.png");
   background-position: 50% 80%;
-  background-size: 35%;
+  background-size: 420px;
   background-repeat: no-repeat;
   background-color: #C0E899;
   width: 100%;
@@ -22,8 +21,8 @@ project page
 }
 .hero-2{
   background-image: url("../img/miand/hero-2.png");
-  background-position: 50% 80%;
-  background-size: 35%;
+  background-position: 47% 80%;
+  background-size: 450px;
   background-repeat: no-repeat;
   background-color: #7CEFD5;
   width: 100%;
@@ -32,7 +31,7 @@ project page
 .hero-3{
   background-image: url("../img/vine/hero-3.png");
   background-position: 50% 100%;
-  background-size: 40%;
+  background-size: 550px;
   background-repeat: no-repeat;
   background-color: #FFCC33;
   width: 100%;
@@ -41,7 +40,7 @@ project page
 .hero-4{
   background-image: url("../img/veriditas/hero-4.png");
   background-position: 50% 100%;
-  background-size: 45%;
+  background-size: 600px;
   background-repeat: no-repeat;
   background-color: #fdb7a9;
   width: 100%;
@@ -49,8 +48,8 @@ project page
 }
 .hero-5{
   background-image: url("../img/badgeville/hero-5.png");
-  background-position: 50% 100%;
-  background-size: 45%;
+  background-position: 50% 80%;
+  background-size: 500px;
   background-repeat: no-repeat;
   background-color: #8bf0fd;
   width: 100%;
@@ -59,36 +58,35 @@ project page
 .hero-6{
   background-image: url("../img/ncbc/hero-6.png");
   background-position: 50% 80%;
-  background-size: 35%;
+  background-size: 450px;
   background-repeat: no-repeat;
   background-color: #87bdfb;
   width: 100%;
   height: 65vh;
 }
 
-.hero-7{
+.hero-video{
   background-position: 50% 100%;
-  background-color: #192CD8;
   width: 100%;
   height: 90vh;
+}
+
+.hero-7{
+  background-color: #192CD8;
+
 }
 .hero-8{
-  background-position: 50% 100%;
   background-color: #f8eeb9;
-  width: 100%;
-  height: 90vh;
 }
 .hero-9{
-  background-position: 50% 100%;
   background-color: #260c41;
-  width: 100%;
-  height: 90vh;
+
 }
 .hero-10{
   background-image: url("../img/ebook/hero-10.png");
   background-repeat: no-repeat;
   background-position: 50% 70%;
-  background-size: 30%;
+  background-size: 400px;
   background-color: #a3f9ee;
   width: 100%;
   height: 75vh;
@@ -110,7 +108,8 @@ project page
 }
 iframe{
   width: 100%;
-  margin-top: 105px;
+  margin-top: 90px;
+  min-width: 480px;
 }
 .reduced{
   max-width: 250px;
@@ -200,6 +199,7 @@ iframe{
 .project-section .row{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .project-section .col-1-4{
   flex-basis: 23%;
@@ -234,8 +234,6 @@ iframe{
   color: #192CD8;
 }
 
-
-
 .up-arrow:hover, .go-to-top:hover{
   text-decoration: none;
   color: #F39090;
@@ -244,9 +242,13 @@ iframe{
 /* ---------------------
 responsive
 --------------------- */
-
-
-@media screen and (min-width: 768px){
+.desktop-view{
+  display: block;
+}
+.mobile-view{
+  display: none;
+}
+@media screen and (min-width: 769px){
 
   li a{
     display: block;
@@ -254,6 +256,7 @@ responsive
   .hamburger{
     display: none;
     padding: 100px;
+    float: right;
   }
   .project-section .col-1-2{
     flex-basis: 48%;
@@ -267,6 +270,39 @@ responsive
   .row .col-1-2{
     flex-basis: 100%;
   }
+  .row .col-1-4{
+    flex-basis: 48%;
+  }
+  .hero-video{
+    position: relative;
+    background-position: 50% 100%;
+    width: 100%;
+    height: 80vh;
+  }
+  iframe{
+    margin-top: 55px;
+  }
 
+
+}
+
+@media screen and (max-width: 480px){
+  .hero-image{
+    display: none;
+  }
+  .desktop-view{
+    display: none;
+  }
+  .mobile-view{
+    display: block;
+  }
+  .hero-video{
+    background-position: 50% 100%;
+    width: 100%;
+    height: 65vh;
+  }
+  iframe{
+    margin-top: 0px;
+  }
 
 }

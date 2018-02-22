@@ -57,3 +57,40 @@ $(document).ready(function(){
   });
 });
 
+
+// responsive nav
+$(document).ready(function() {
+
+$( ".cross" ).hide();
+$( ".menu-toggle" ).hide();
+$( ".hamburger-icon").click(function() {
+$( ".menu-toggle").slideToggle( 300, function() {
+$( ".hamburger-icon" ).hide();
+$( ".cross" ).show();
+});
+});
+
+$( ".cross").click(function() {
+$( ".menu-toggle" ).slideToggle( 300, function() {
+$( ".cross" ).hide();
+$( ".hamburger-icon" ).show();
+});
+});
+
+$( ".menu-toggle a li").click(function() {
+$( ".menu-toggle" ).slideToggle( 300, function() {
+$( ".cross" ).hide();
+$( ".hamburger-icon" ).show();
+});
+});
+//
+//     $('.hamburger-icon').click(function(){
+//   $(this).toggleClass('open');
+// });
+
+});
+</script>
+<script>
+  $(function(){
+$("#nav-placeholder").load("nav.html");
+});

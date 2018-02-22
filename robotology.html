@@ -15,21 +15,36 @@
   <link rel="stylesheet" href="css/project_page.css">
 </head>
 <body>
-  <nav id= "mainNav">
-    <div id ="nav-align">
+  <nav id= "mainNav" >
+    <div class="nav-align"  id="hamburger">
       <a href="index.html"><img id ="logo" src="img/logo.svg" alt="logo"></a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#projects-anchor">Work</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#footer">Contact</a></li>
-      </ul>
-      <a class="hamburger" href="">
-        <div class="hamburger-line"></div>
-        <div class="hamburger-line"></div>
-        <div class="hamburger-line"></div>
-      </a>
+      <div class ="hamburger-icon" href="">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </div>
+            <div class="cross">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </div>
+
+      <div class="menu">
+        <ul>
+          <a class= "scroll active" href="#home"><li class= "active">Home</li></a>
+          <a class= "scroll" href="#projects-anchor"><li>Work</li></a>
+          <a class= "scroll" href="#about"><li>About</li></a>
+          <a class= "scroll" href="#footer"><li>Contact</li></a>
+        </ul>
+      </div>
     </div>
+    <div  class ="menu-toggle">
+    <ul>
+    <a class= "scroll active" href="#home"><li class= "active">Home</li></a>
+    <a class= "scroll" href="#projects-anchor"><li>Work</li></a>
+    <a class= "scroll" href="#about"><li>About</li></a>
+    <a class= "scroll" href="#footer"><li>Contact</li></a>
+    </ul></div>
   </nav>
 
   <header id="top" class = "hero-video hero-9">

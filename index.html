@@ -13,22 +13,40 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
   <nav id= "mainNav" >
-    <div class="nav-align"  id="hamburger">
+    <div class="nav-align" >
+
+
       <a href="index.html"><img id ="logo" src="img/logo.svg" alt="logo"></a>
-      <a class="hamburger-icon" href="" onclick="responsiveNav()">
-        <div class="hamburger-line"></div>
-        <div class="hamburger-line"></div>
-        <div class="hamburger-line"></div>
-      </a>
-      <ul>
-        <li><a class= "scroll active" href="#home">Home</a></li>
-        <li><a class= "scroll" href="#projects-anchor">Work</a></li>
-        <li><a class= "scroll" href="#about">About</a></li>
-        <li><a class= "scroll" href="#footer">Contact</a></li>
-      </ul>
+      <div class ="hamburger-icon" href="">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </div>
+            <div class="cross">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </div>
+
+      <div class="menu">
+        <ul>
+          <a class= "scroll active" href="#home"><li class= "active">Home</li></a>
+          <a class= "scroll" href="#projects-anchor"><li>Work</li></a>
+          <a class= "scroll" href="#about"><li>About</li></a>
+          <a class= "scroll" href="#footer"><li>Contact</li></a>
+        </ul>
+      </div>
     </div>
+    <div  class ="menu-toggle">
+  <ul>
+    <a class= "scroll active" href="#home"><li class= "active">Home</li></a>
+    <a class= "scroll" href="#projects-anchor"><li >Work</li></a>
+    <a class= "scroll" href="#about"><li>About</li></a>
+    <a class= "scroll" href="#footer"><li>Contact</li></a>
+  </ul></div>
   </nav>
 
   <header id="home">
@@ -124,17 +142,18 @@
 </div>
 </a>
     </section>
+
     <section id="footer">
       <div class ="footer-text-box">
         <div class="row">
-          <div class="col-1-2">
-            <p style="color: pink">Gayle Gahee Kuk — Designer & Educator</p>
+          <div class="col-1-2 text-center">
+            <p style="color: pink; margin-top: 0px;">Gayle Gahee Kuk — Designer & Educator</p>
             <p>Looking for awesomely fun projects to work</p>
           </div>
           <div class="col-1-2 contact-box">
             <div class="icon-wrapper">
-           <div class = "linked-in"><i class="fab fa-linkedin fa-2x"></i></div>
-
+           <div class = "linked-in"><a href="https://www.linkedin.com/in/gayle-kuk-5689874b"><i class="fab fa-linkedin fa-2x"></i></a></div>
+            <div class ="footer-line"></div>
             <p class="contact-info">gahee.kuk@gmail.com</br>
 
               Tel: 415-830-2019</br>
@@ -144,20 +163,52 @@
             </div>
           </div>
         </div>
+        <div id= "copyright">©Copyright &nbsp 2012 - 2018</div>
+
       </section>
-      <script>
-      function responsiveNav() {
-        let hamburgerToggle = document.getElementById("hamburger");
-        if (hamburgerToggle.className === "nav-align") {
-          hamburgerToggle.className += "responsive";
-        }
-        else {
-          hamburgerToggle.className = "nav-align";
-        }
-      }
-    </script>
+
+
+
+
       <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
       <script src="js/vendor/jquery-1.12.0.min.js"></script>
       <script src="js/main.js"></script>
+      <script>
+      $(document).ready(function() {
+
+    $( ".cross" ).hide();
+    $( ".menu-toggle" ).hide();
+    $( ".hamburger-icon").click(function() {
+    $( ".menu-toggle").slideToggle( 300, function() {
+    $( ".hamburger-icon" ).hide();
+    $( ".cross" ).show();
+    });
+    });
+
+    $( ".cross").click(function() {
+    $( ".menu-toggle" ).slideToggle( 300, function() {
+    $( ".cross" ).hide();
+    $( ".hamburger-icon" ).show();
+    });
+    });
+
+    $( ".menu-toggle a li").click(function() {
+    $( ".menu-toggle" ).slideToggle( 300, function() {
+    $( ".cross" ).hide();
+    $( ".hamburger-icon" ).show();
+    });
+    });
+//
+//     $('.hamburger-icon').click(function(){
+//   $(this).toggleClass('open');
+// });
+
+    });
+      </script>
+      <script>
+        $(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
     </body>
     </html>
