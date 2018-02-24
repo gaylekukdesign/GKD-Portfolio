@@ -14,7 +14,7 @@
   </head>
   <body>
     <nav id="mainNav">
-      <div class="nav-align">
+      <!-- <div class="nav-align">
         <a href="index.html"><img alt="logo" id="logo" src="img/logo.svg"></a>
         <div class="hamburger-icon">
           <span class="hamburger-line"></span> <span class="hamburger-line"></span> <span class="hamburger-line"></span>
@@ -58,7 +58,7 @@
             </li>
           </ul></a>
         </div>
-      </div>
+      </div> -->
     </nav>
     <header id="home">
       <h1>
@@ -210,16 +210,18 @@
       </div></a>
     </section>
     <section id="footer"></section>
+    <script>
+    $(function(){
+      $("#mainNav").load("main_nav.html");
+      $("#footer").load("footer.html");
+    });
+    </script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js">
     </script>
     <script src="js/vendor/jquery-1.12.0.min.js">
     </script>
     <script src="js/main.js">
     </script>
-    <script>
-    $(function(){
-      $("#footer").load("footer.html");
-    });
-    </script>
+
   </body>
 </html>
