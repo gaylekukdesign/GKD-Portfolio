@@ -83,9 +83,6 @@ $( ".cross" ).hide();
 $( ".hamburger-icon" ).show();
 });
 });
-//
-//     $('.hamburger-icon').click(function(){
-//   $(this).toggleClass('open');
-// });
+
 
 });
