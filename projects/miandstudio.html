@@ -8,16 +8,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/project_page.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/project_page.css">
 </head>
 <body>
   <nav id= "mainNav" >
     <div class="nav-align" >
-      <a href="index.html"><img id ="logo" src="img/logo.svg" alt="logo"></a>
+      <a href="../index.html"><img id ="logo" src="../img/logo.svg" alt="logo"></a>
       <div class ="hamburger-icon" href="">
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
@@ -31,19 +31,19 @@
 
       <div class="menu">
         <ul>
-          <a href="index.html"><li>Home</li></a>
-          <a href="index.html#projects-anchor"><li>Work</li></a>
-          <a href="index.html#about"><li>About</li></a>
-          <a href="index.html#footer"><li>Contact</li></a>
+          <a href="../index.html"><li>Home</li></a>
+          <a href="../index.html#projects-anchor"><li>Work</li></a>
+          <a href="../index.html#about"><li>About</li></a>
+          <a href="../index.html#footer"><li>Contact</li></a>
         </ul>
       </div>
     </div>
     <div  class ="menu-toggle">
       <ul>
-        <a href="index.html"><li>Home</li></a>
-        <a href="index.html#projects-anchor"><li>Work</li></a>
-        <a href="index.html#about"><li>About</li></a>
-        <a href="index.html#footer"><li>Contact</li></a>
+        <a href="../index.html"><li>Home</li></a>
+        <a href="../index.html#projects-anchor"><li>Work</li></a>
+        <a href="../index.html#about"><li>About</li></a>
+        <a href="../index.html#footer"><li>Contact</li></a>
       </ul>
     </div>
   </nav>
@@ -72,7 +72,7 @@
         <div class="project-section">
           <div class="project-section-header">Artwork Preparation</div>
 
-<img src="img/miand/miand_icons.png" alt="">
+<img src="../img/miand/miand_icons.png" alt="">
       </div>
 
 
@@ -85,16 +85,16 @@
     <div class="flex-container">
       <div class ="row">
         <div class ="col-1-4">
-         <img src="img/miand/miand_wireframe_01.png" alt="wireframe">
+         <img src="../img/miand/miand_wireframe_01.png" alt="wireframe">
        </div>
        <div class ="col-1-4">
-         <img src="img/miand/miand_wireframe_02.png" alt="wireframe">
+         <img src="../img/miand/miand_wireframe_02.png" alt="wireframe">
       </div>
       <div class ="col-1-4">
-        <img src="img/miand/miand_wireframe_03.png" alt="wireframe">
+        <img src="../img/miand/miand_wireframe_03.png" alt="wireframe">
      </div>
      <div class ="col-1-4">
-       <img src="img/miand/miand_wireframe_04.png" alt="wireframe">
+       <img src="../img/miand/miand_wireframe_04.png" alt="wireframe">
     </div>
     </div>
 
@@ -110,18 +110,18 @@
   <div class="flex-container">
     <div class ="row">
       <div class ="col-1-2">
-       <img src="img/miand/miand_mockups_01.png" alt="mockups">
+       <img src="../img/miand/miand_mockups_01.png" alt="mockups">
      </div>
      <div class ="col-1-2">
-       <img src="img/miand/miand_mockups_02.png" alt="mockups">
+       <img src="../img/miand/miand_mockups_02.png" alt="mockups">
     </div>
   </div>
   <div class ="row">
     <div class ="col-1-2">
-      <img src="img/miand/miand_mockups_03.png" alt="mockups">
+      <img src="../img/miand/miand_mockups_03.png" alt="mockups">
    </div>
    <div class ="col-1-2">
-     <img src="img/miand/miand_mockups_04.png" alt="mockups">
+     <img src="../img/miand/miand_mockups_04.png" alt="mockups">
   </div>
 </div>
 
@@ -132,18 +132,15 @@
 </div>
 </div>
 <div id="go-top">
-  <div class="icon-wrapper">
-   <div class = "up-arrow">
-   <i class="fa fa-arrow-up" style="font-size:1rem;">
-   </i>
-   <p class = "go-to-top">Go to Top</p>
-   </div>
-
- </div>
 </div>
 </section>
-<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-<script src="js/vendor/jquery-1.12.0.min.js"></script>
-<script src="js/main.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="../js/vendor/jquery-1.12.0.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+      $(function(){
+          $("#go-top").load("goTop.html");
+      });
+  </script>
   </body>
   </html>
